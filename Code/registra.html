@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<!-- PANTALEO FABIO 5B -->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Senza nome 1</title>
+<script type="text/javascript">
+function controllo(){
+	var pass1=Azione4.pass.value;
+	var pass2=Azione4.pass2.value;
+
+	if(Azione4.idutente.value=="" || Azione4.user.value=="" || Azione4.pass.value=="" || Azione4.pass2.value=="" || Azione4.cognome.value=="" || Azione4.nome.value=="" || Azione4.email.value=="" || pass1!=pass2){
+		alert("Attenzione: alcuni campi potrebbero vuoti o errati");
+		return false;
+	}
+	
+}
+</script>
+
+</head>
+<!-- PANTALEO FABIO 5B -->
+<body>
+<form name="Azione4" onsubmit="return controllo()" action="registra.php" method="post">
+<table name="Registra">
+<tr>
+	<td><label id="label1">IDUtente</label> </td>
+	<td><input type="text" name="idutente"/></td>
+</tr>
+<tr>
+	<td><label id="label1">Username</label> </td>
+	<td><input type="text" name="user"/></td>
+</tr>
+<tr>
+	<td><label id="label1">Password</label> </td>
+	<td><input type="password" name="pass"/></td>
+</tr>
+<tr>
+	<td><label id="label1">Conferma Password</label> </td>
+	<td><input type="password" name="pass2"/></td>
+</tr>
+
+<tr>
+	<td><label id="label1">Cognome</label> </td>
+	<td><input type="text" name="cognome"/></td>
+</tr>
+<tr>
+	<td><label id="label1">Nome</label> </td>
+	<td><input type="text" name="nome"/></td>
+</tr>
+<tr>
+	<td><label id="label1">Email</label> </td>
+	<td><input type="text" name="email"/></td>
+</tr>
+<tr>
+<td><input type="submit" name="registra" value="Registrati"/></td>
+<td><input type="reset" name="reset" value="Reset"/></td>
+</tr>
+
+</table>
+
+
+</form>
+</body>
+<!-- PANTALEO FABIO 5B -->
+</html>

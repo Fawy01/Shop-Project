@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- PANTALEO FABIO 5B -->
+<head>
+
+<script type="text/javascript">
+function controllo(){
+	if(Azione1.user.value=="" || Azione1.pass.value==""){
+		alert("Campi vuoti o errati");
+		return false;
+	}
+
+function registra(){
+window.location.assign("localhost:80/negozio/regisstra.html");
+}
+}
+</script>
+<meta content="it" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Senza nome 1</title>
+
+</head>
+<!-- PANTALEO FABIO 5B -->
+<body>
+<form name="Azione1" onsubmit="return controllo()" action="controlla.php" method="post">
+
+<table name="tabella">
+<tr>
+	<td><label id="label1">Username</label> </td>
+	<td><input type="text" name="user" value=""></input></td>
+</tr>
+<tr>
+	<td><label id="label1">Password</label> </td>
+	<td><input type="password" name="pass" value=""></input></td>
+</tr>
+</table>
+
+<input name="bottoneControlla" type="submit" value="Accedi"></input>
+<input type="reset" name="resetta" value="Reset"></input>
+
+</form>
+
+</body>
+<!-- PANTALEO FABIO 5B -->
+</html>
